@@ -395,8 +395,13 @@
         <form class="footer-form">
             <p>Подпишитесь на рассылку</p>
             <label for=""></label>
-            <input type="email" placeholder="Email" class="fotter-form-field">
-            <button type="submit" class="button footer-form-button">Подписаться</button>
+            <input type="email" placeholder="Email" class="footer-form-field">
+            <button type="submit" class="button footer-form-button">
+                <span class="footer-button-text">Подписаться</span>
+                <svg class="footer-form-icon">
+                    <use href="./image/symbol-defs.svg#icon-send"></use>
+                </svg>
+            </button>
         </form>
 
 
@@ -414,25 +419,56 @@
             </button>
             <form name="client-information" class="start-form">
                 <h1 class="start-form-title">Оставьте свои данные, мы вам перезвоним</h1>
-                <label for="" class="start-form-question">Имя</label>
-                <input type="text" class="form-field">
+                <label class="form-label">
+                    <span class="start-form-question">Имя</span>
+                    <div class="form-input">
+                    <input type="text" name="client-name" class="form-field">
+                    <svg class="form-icon">
+                        <use href="./image/symbol-defs.svg#icon-person-black"></use>
+                    </svg>
+                    </div>
+                    
+                </label>
+                
 
-                <label for="" class="start-form-question">Телефон</label>
-                <input type="tel" class="form-field">
+                <label class="form-label">
+                    <span class="start-form-question">Телефон</span>
+                    <div class="form-input">
+                    <input type="tel" name="client-tel" class="form-field">
+                    <svg class="form-icon">
+                        <use href="./image/symbol-defs.svg#icon-phone-black"></use>
+                    </svg>
+                    </div>
+                </label>
+                
 
-                <label for="" class="start-form-question">Почта</label>
-                <input type="email" class="form-field">
+                <label class="form-label">
+                    <span class="start-form-question">Почта</span>
+                    <div class="form-input">
+                    <input type="email" name="client-email" class="form-field">
+                    <svg class="form-icon">
+                        <use href="./image/symbol-defs.svg#icon-email-black"></use>
+                    </svg>
+                    </div>
+                </label>
+                
 
-                <label for="coment" class="start-form-question">Комментарий</label>
-                <textarea name="coment" id="coment" cols="30" rows="10" class="form-field"></textarea>
+                <label for="comment" class="form-label comment">
+                    <span class="start-form-question">Комментарий</span>
+                </label>
+                <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Введите текст" class="textarea-form"></textarea>
 
-                <label for="" class="start-form-rules">
-                    <input type="checkbox">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a href="">Условия договора</a>
+                <label class="start-form-rules">
+                    <input class="checkbox" type="checkbox" name="rules-check">
+                    <span class="icon-check"></span>
+                    <span>Соглашаюсь с рассылкой и принимаю</span>
+                    <a href="" class="form-link">Условия договора</a>
                 </label>
 
-                <button type="submit" class="button start-form-button">Отправить</button>
+                <button type="submit" class="button start-form-button">
+                    Отправить
+                   
+                </button>
             </form>
 
         </div>
