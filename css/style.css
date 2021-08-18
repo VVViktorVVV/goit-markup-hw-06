@@ -46,9 +46,10 @@ img {
   height: auto;
 }
 
-:active,
-:hover,
-:focus {
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
   outline: 0;
   outline-offset: 0;
 }
@@ -174,7 +175,6 @@ img {
 }
 
 .footer {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -253,7 +253,7 @@ img {
 }
 
 .footer-form-field {
-  width: 350px;
+  width: 354px;
   height: 50px;
 
   padding: 15px;
@@ -534,11 +534,10 @@ contact-list-item {
 }
 
 .prof-cards-content {
-  padding: 30px 10px 16px 10px;
+  padding: 30px 32px 30px 32px;
 }
 
 .our-team h3 {
-  /* margin-top: 30px; */
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -548,7 +547,7 @@ contact-list-item {
   letter-spacing: 0.03em;
 }
 .our-team p {
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -557,7 +556,6 @@ contact-list-item {
 }
 
 .our-team {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -583,10 +581,6 @@ contact-list-item {
 }
 
 .social-network-list {
-  margin-right: 32px;
-  margin-left: 32px;
-  margin-bottom: 30px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -835,6 +829,8 @@ contact-list-item {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
+  padding: 40px;
+
   max-width: 528px;
   max-height: 581px;
 
@@ -881,7 +877,7 @@ contact-list-item {
   flex-direction: column;
   align-items: center;
 
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .form-label {
@@ -891,7 +887,7 @@ contact-list-item {
 }
 
 .comment {
-  margin-bottom: 0;
+  margin-bottom: 20;
 }
 
 .form-field {
@@ -959,7 +955,7 @@ contact-list-item {
 }
 
 .start-form-title {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -983,8 +979,7 @@ contact-list-item {
   display: inline-flex;
   align-items: center;
 
-  padding-bottom: 30px;
-  padding-top: 20px;
+  margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 1.71px;
@@ -1027,6 +1022,7 @@ contact-list-item {
   padding-left: 4px;
 }
 
-.start-form-button {
+.start-form-button:hover,
+.start-form-button:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
